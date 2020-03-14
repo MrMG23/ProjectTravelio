@@ -1,4 +1,4 @@
-package com.raion.projecttravelio.activity.SplashActivity;
+package com.raion.projecttravelio.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,9 +10,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.raion.projecttravelio.MainActivity;
 import com.raion.projecttravelio.R;
-import com.raion.projecttravelio.activity.LoginActivity.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
     private Animation fadeIn;
