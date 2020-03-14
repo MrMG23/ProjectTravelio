@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.LoginActivity">
+    tools:context=".activity.SignupActivity">
 
     <View
         android:id="@+id/background_login"
@@ -22,32 +22,43 @@
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="132dp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/scp_bowlbysc"
         android:text="@string/app_name"
         android:textColor="@color/appnamecolor"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/btn_signup"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/emailL_login"
+        android:id="@+id/nama_signup"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:hint="@string/nama_signup"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:inputType="textEmailAddress"
-        android:hint="@string/emailhint"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_name" />
 
     <EditText
-        android:id="@+id/pass_login"
+        android:id="@+id/emailL_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_signup" />
+
+    <EditText
+        android:id="@+id/pass_signup"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -57,39 +68,34 @@
         android:hint="@string/passhint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailL_login" />
+        app:layout_constraintTop_toBottomOf="@+id/emailL_signup" />
+
+    <EditText
+        android:id="@+id/pass_signup_retype"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:inputType="textPassword"
+        android:hint="@string/pass_retype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_signup" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_signup"
         android:layout_width="140dp"
         android:layout_height="42dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/scp_questrial"
-        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:hint="Masuk"
-        android:textColor="@color/appnamecolor"
-        android:background="@drawable/btn_rounded"
-        app:layout_constraintTop_toBottomOf="@+id/pass_login" />
-
-    <Button
-        android:id="@+id/signup"
-        android:layout_width="140dp"
-        android:layout_height="22dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/scp_questrial"
+        android:hint="Daftar"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:hint="Buat Akun Baru?"
         android:textColor="@color/appnamecolor"
         android:background="@drawable/btn_rounded"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/pass_signup_retype" />
 </androidx.constraintlayout.widget.ConstraintLayout>

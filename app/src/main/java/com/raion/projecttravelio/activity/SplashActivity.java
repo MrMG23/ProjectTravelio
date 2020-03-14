@@ -34,8 +34,8 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //merubah activity
-                Intent goToHome = new Intent(SplashActivity.this, LoginActivity.class);
-                startActivity(goToHome);
+                Intent goToLogin = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(goToLogin);
                 finish();
             }
         }, 2000);//2000 ms

@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">TRAVELUR</string>
+    <string name="app_name">JALANKUY</string>
     <string name="app_motto">Traveling App</string>
     <string name="emailhint">E-mail/Nama Pengguna</string>
     <string name="passhint">Kata Sandi</string>
+    <string name="email_signup">E-mail</string>
+    <string name="nama_signup">Nama Pengguna</string>
+    <string name="pass_retype">Masukkan kembali Kata Sandi</string>
 </resources>
