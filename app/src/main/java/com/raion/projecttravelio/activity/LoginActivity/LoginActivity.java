@@ -1,4 +1,4 @@
-package com.raion.projecttravelio.activity;
+package com.raion.projecttravelio.activity.LoginActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 

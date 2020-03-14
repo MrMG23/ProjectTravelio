@@ -1,4 +1,4 @@
-package com.raion.projecttravelio.activity;
+package com.raion.projecttravelio.activity.SplashActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.raion.projecttravelio.MainActivity;
 import com.raion.projecttravelio.R;
+import com.raion.projecttravelio.activity.LoginActivity.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
     private Animation fadeIn;
@@ -35,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //merubah activity
-                Intent goToHome = new Intent(SplashActivity.this, MainActivity.class);
+                Intent goToHome = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(goToHome);
                 finish();
             }
