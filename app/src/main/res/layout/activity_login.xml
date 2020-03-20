@@ -89,7 +89,8 @@
         android:hint="Buat Akun Baru?"
         android:textColor="@color/appnamecolor"
         android:background="@drawable/btn_rounded"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        android:onClick="signUpActivity"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
