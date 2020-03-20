@@ -6,4 +6,5 @@
     <string name="email_signup">E-mail</string>
     <string name="nama_signup">Nama Pengguna</string>
     <string name="pass_retype">Masukkan kembali Kata Sandi</string>
+    <string name="lupa_pass">Lupa Kata Sandi?</string>
 </resources>

@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     /*    appName = findViewById(R.id.app_name);
         email = findViewById(R.id.emailL_login);
         password = findViewById(R.id.pass_login);*/
+        Intent intent = getIntent();
     }
 
     public void signUpActivity(View view){

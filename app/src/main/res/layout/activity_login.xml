@@ -50,14 +50,26 @@
         android:id="@+id/pass_login"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="60dp"
-        android:inputType="textPassword"
         android:hint="@string/passhint"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailL_login" />
+
+    <TextView
+        android:id="@+id/lupa_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lupa_pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_login"
+
+        />
 
     <Button
         android:id="@+id/btn_login"
@@ -65,14 +77,15 @@
         android:layout_height="42dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/btn_rounded"
         android:fontFamily="@font/scp_questrial"
+        android:hint="Masuk"
+        android:textColor="@color/colorPrimaryBlack"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        android:hint="Masuk"
-        android:textColor="@color/appnamecolor"
-        android:background="@drawable/btn_rounded"
         app:layout_constraintTop_toBottomOf="@+id/pass_login" />
 
     <Button
@@ -87,7 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:hint="Buat Akun Baru?"
-        android:textColor="@color/appnamecolor"
+        android:textColor="@color/colorPrimaryBlack"
         android:background="@drawable/btn_rounded"
         app:layout_constraintTop_toBottomOf="@+id/btn_login"
         android:onClick="signUpActivity"/>
