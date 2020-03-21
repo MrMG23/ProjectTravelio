@@ -83,38 +83,40 @@
         android:hint="Masuk"
         android:textColor="@color/colorPrimaryBlack"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass_login" />
 
-<!--    <Button-->
-<!--        android:id="@+id/signup"-->
-<!--        android:layout_width="140dp"-->
-<!--        android:layout_height="22dp"-->
-<!--        android:layout_alignParentLeft="true"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:fontFamily="@font/scp_questrial"-->
-<!--        android:textSize="16sp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        android:hint="Buat Akun Baru?"-->
-<!--        android:textColor="@color/colorPrimaryBlack"-->
-<!--        android:background="@drawable/btn_rounded"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btn_login"-->
-<!--        android:onClick="signUpActivity"/>-->
-
-    <TextView
-        android:id="@+id/buatAkun"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/buat_akun"
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/scp_questrial"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:hint="Daftar"
+        android:textColor="@color/colorPrimaryBlack"
+        android:background="@drawable/btn_rounded"
         app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        android:onClick="signUpActivity"/>
 
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/buatAkun"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:text="@string/buat_akun"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_login"-->
+
+<!--        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
