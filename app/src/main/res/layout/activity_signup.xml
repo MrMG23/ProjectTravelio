@@ -37,6 +37,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/nama_signup"
+        android:fontFamily="@font/scp_questrial"
+        android:textAlignment="center"
         android:inputType="textEmailAddress"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="60dp"
@@ -53,6 +55,8 @@
         android:layout_marginRight="60dp"
         android:inputType="textEmailAddress"
         android:hint="@string/email_signup"
+        android:fontFamily="@font/scp_questrial"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nama_signup" />
@@ -66,6 +70,8 @@
         android:layout_marginRight="60dp"
         android:inputType="textPassword"
         android:hint="@string/passhint"
+        android:fontFamily="@font/scp_questrial"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailL_signup" />
@@ -79,6 +85,8 @@
         android:layout_marginRight="60dp"
         android:inputType="textPassword"
         android:hint="@string/pass_retype"
+        android:textAlignment="center"
+        android:fontFamily="@font/scp_questrial"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass_signup" />

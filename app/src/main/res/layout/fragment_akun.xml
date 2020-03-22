@@ -3,12 +3,146 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.AkunFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/background_akun"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/fotoAkun"
+            android:layout_width="132dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/foto_akun"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewnamaAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="104dp"
+            android:fontFamily="@font/scp_questrial"
+            android:text="Laudya"
+
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/fotoAkun"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewWishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="96dp"
+            android:fontFamily="@font/scp_questrial"
+            android:text="Wishlist"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fotoAkun" />
+
+        <TextView
+            android:id="@+id/textViewPromo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/scp_questrial"
+            android:text="Promo"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWishlist" />
+
+        <TextView
+            android:id="@+id/textViewBantuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/scp_questrial"
+            android:text="Bantuan"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPromo" />
+
+        <TextView
+            android:id="@+id/textViewPengaturanAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/scp_questrial"
+            android:text="Pengaturan Akun"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBantuan" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/btn_panah"
+            android:hint=">"
+            android:fontFamily="@font/scp_questrial"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewWishlist"
+            app:layout_constraintTop_toBottomOf="@+id/fotoAkun" />
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_panah"
+            android:hint=">"
+            android:fontFamily="@font/scp_questrial"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewPengaturanAkun"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_panah"
+            android:hint=">"
+            android:fontFamily="@font/scp_questrial"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewBantuan"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="172dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_panah"
+            android:hint=">"
+            android:fontFamily="@font/scp_questrial"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewPromo"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

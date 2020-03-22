@@ -6,4 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".activity.DetailActivity">
 
+    <TextView
+        android:id="@+id/namalokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:text="Jawa Timur Park 3"
+
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_foto"
+        tools:layout_editor_absoluteX="35dp" />
+
+    <ImageView
+
+        android:id="@+id/imageView_foto"
+        android:layout_width="410dp"
+        android:layout_height="270dp"
+        android:src="@drawable/foto_jatimpark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ikon_alamat"
+        android:layout_width="19dp"
+        android:layout_height="24dp"
+        android:src="@drawable/icon_lokasi"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scp_questrial"
+        android:text="Jl. Ir. Soekarno No. 144, Beji, Kec. Junrejo, Kota Batu"
+        android:textSize="12sp"
+
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+
+    <TextView
+        android:id="@+id/keterangan"
+        android:layout_width="338dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+
+        android:fontFamily="@font/scp_questrial"
+        android:text="Jawa Timur Park 3 menawarkan konsep Wisata Edukasi Dinosaurus (Dino Park) dengan menampilkan beberapa wahana spektakuler."
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamat" />
+
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/scp_questrial"
+        android:text="Rp 100.000,00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keterangan" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
