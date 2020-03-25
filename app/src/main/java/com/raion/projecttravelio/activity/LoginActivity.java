@@ -72,11 +72,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    private void signIn(){
+    private void signIn() {
         Log.d(TAG, "signIn");
         if (!validateForm()) {
             return;
         }
+
+        //showProgressDialog();
         String email = edtEmail.getText().toString();
         String password = edtPass.getText().toString();
 
@@ -85,10 +87,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(TAG, "signIn:onComplete:" + task.isSuccessful());
+                        //hideProgressDialog();
+
                         if (task.isSuccessful()) {
                             onAuthSuccess(task.getResult().getUser());
-                        } else {
-                            Toast.makeText(LoginActivity.this, "Sign In Failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -114,8 +116,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private void onAuthSuccess(FirebaseUser user) {
         String username = usernameFromEmail(user.getEmail());
-        // membuat User admin baru
-        writeNewAdmin(user.getUid(), username, user.getEmail());
 
         // Go to MainActivity
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
@@ -130,17 +130,4 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    // menulis ke Database
-    private void writeNewAdmin(String userId, String name, String email) {
-        Admin admin = new Admin(name, email);
-
-        mDatabase.child("Admins").child(userId).setValue(admin);
-    }
-
-//    if (password.equals(passwordFromFirebase)) {
-//        //Simpan username (key) kepada local
-//        SharedPreferences sharedPreferences = getSharedPreferences(DRIVERID_KEY, MODE_PRIVATE);
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
-//        editor.putString(driverid_key, String.valueOf(i));
-//        editor.apply();
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.raion.projecttravelio">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -13,12 +14,19 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.KonfirmasiBCAActivity"></activity>
+        <activity android:name=".activity.PembayaranBCAActivity" />
+        <activity android:name=".activity.PembayaranActivity" />
+        <activity android:name=".activity.DataPengunjungActivity" />
+        <activity android:name=".activity.DataPemesanActivity" />
+        <activity android:name=".activity.PesanTiketDetailActivity" />
+        <activity android:name=".activity.PesanTiketActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB3jzQBc4OWAscenbTa13XNAJ8qU_vY2R4"/>
+            android:value="AIzaSyB3jzQBc4OWAscenbTa13XNAJ8qU_vY2R4" />
 
-        <activity android:name=".activity.DetailActivity"></activity>
+        <activity android:name=".activity.DetailActivity" />
         <activity
             android:name=".activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
