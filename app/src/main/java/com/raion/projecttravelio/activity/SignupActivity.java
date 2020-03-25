@@ -56,17 +56,17 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         String email = edtEmail.getText().toString();
         String password = edtPass.getText().toString();
 
-        mAuth.signInWithEmailAndPassword(email, password)
+        mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d(TAG, "signIn:onComplete:" + task.isSuccessful());
+                        Log.d(TAG, "createUser:onComplete:" + task.isSuccessful());
                         //hideProgressDialog();
 
                         if (task.isSuccessful()) {
                             onAuthSuccess(task.getResult().getUser());
                         } else {
-                            Toast.makeText(SignupActivity.this, "Sign In Failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignupActivity.this, "Sign Up Failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -96,7 +96,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         writeNewAdmin(user.getUid(), username, user.getEmail());
 
         // Go to MainActivity
-        startActivity(new Intent(SignupActivity.this, MainActivity.class));
+        startActivity(new Intent(SignupActivity.this, LoginActivity.class));
         finish();
     }
 
@@ -111,7 +111,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
     // menulis ke Database
     private void writeNewAdmin(String userId, String name, String email) {
         Admin admin = new Admin(name, email);
-
+        Log.d(TAG, "Data ke Database");
         mDatabase.child("Admins").child(userId).setValue(admin);
     }
 }

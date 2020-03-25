@@ -79,6 +79,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         String email = edtEmail.getText().toString();
         String password = edtPass.getText().toString();
+
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
