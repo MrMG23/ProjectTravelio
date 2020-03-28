@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         mAuth = FirebaseAuth.getInstance();
-        checkLoggedIn();
+//        checkLoggedIn();
 
         edtEmail = findViewById(R.id.emailL_login);
         edtPass = findViewById(R.id.pass_login);
@@ -112,11 +112,17 @@ public class LoginActivity extends AppCompatActivity {
         Intent gotohome = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(gotohome);
     }
-//
-    private void checkLoggedIn() {
-        if (mAuth.getCurrentUser() != null) {
-            goToHome();
-        }
+
+    public void signOut(View view){
+        FirebaseAuth.getInstance().signOut();
+        mAuth = FirebaseAuth.getInstance();
     }
+
+
+//    private void checkLoggedIn() {
+//        if (mAuth.getCurrentUser() != null) {
+//            goToHome();
+//        }
+//    }
 
 }
