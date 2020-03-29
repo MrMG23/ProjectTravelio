@@ -92,6 +92,7 @@
         android:layout_marginTop="108dp"
         android:fontFamily="@font/scp_questrial"
         android:text="Pesan Tiket"
+        android:background="@drawable/btn_rounded"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
