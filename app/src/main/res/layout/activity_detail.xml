@@ -79,4 +79,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/keterangan" />
 
+    <Button
+        android:layout_width="136dp"
+        android:layout_height="41dp"
+
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/scp_questrial"
+        android:text="Pesan Tiket"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/harga" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

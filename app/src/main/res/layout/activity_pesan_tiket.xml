@@ -6,4 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".activity.PesanTiketActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="307dp"
+        android:layout_height="345dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/tanggal"
+            android:layout_width="300dp"
+            android:layout_height="78dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="287dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="dd/mm/yy"
+                android:inputType="date"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/guide"
+            android:layout_width="300dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guide" />
+            "
+
+            <Spinner
+                android:id="@+id/spinnerGuide"
+                android:layout_width="287dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/jumlahtiket"
+            android:layout_width="300dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Tiket" />
+
+            <EditText
+                android:layout_width="287dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="252dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/scp_questrial"
+        android:text="Pesan Tiket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

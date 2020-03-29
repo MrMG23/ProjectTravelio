@@ -14,4 +14,10 @@
     <string name="title_1">Beranda</string>
     <string name="title_2">Tiket</string>
     <string name="title_3">Akun</string>
+
+    <string-array name="arrayGuide">
+        <array1>"Ya" </array1>
+        <array2>"Tidak"</array2>
+    </string-array>
+
 </resources>
