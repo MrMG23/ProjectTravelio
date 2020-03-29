@@ -76,35 +76,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailL_signup" />
 
-    <EditText
-        android:id="@+id/pass_signup_retype"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:inputType="textPassword"
-        android:hint="@string/pass_retype"
-        android:textAlignment="center"
-        android:fontFamily="@font/scp_questrial"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pass_signup" />
-
     <Button
         android:id="@+id/btn_signup"
-        android:layout_width="140dp"
+        android:layout_width="240dp"
         android:layout_height="42dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="60dp"
-        android:fontFamily="@font/scp_questrial"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:hint="Daftar"
-        android:textSize="16sp"
-        android:textColor="@color/appnamecolor"
         android:background="@drawable/btn_rounded"
-        app:layout_constraintTop_toBottomOf="@+id/pass_signup_retype"
-        android:onClick="loginActivity"/>
+        android:fontFamily="@font/scp_questrial"
+        android:text="Daftar"
+        android:onClick="loginActivity"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_signup" />
 </androidx.constraintlayout.widget.ConstraintLayout>

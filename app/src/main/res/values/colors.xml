@@ -6,4 +6,5 @@
     <color name="colorPrimaryWhite">#FFFFFF</color>
     <color name="appnamecolor">#2B106D</color>
     <color name="colorPrimaryBlack">#000000</color>
+    <color name="colortheme" />
 </resources>
